@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-// import { resolve } from 'node:path'
 import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
@@ -12,11 +11,6 @@ export default defineConfig(() => ({
       name: process.env.npm_package_name,
     },
     target: "es2015",
-    // rollupOptions: {
-    //   input: {
-    //     main: resolve(__dirname, 'index.html'),
-    //   },
-    // },
   },
   define: {
     "process.env": {
